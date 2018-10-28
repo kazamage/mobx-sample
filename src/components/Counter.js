@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { inject, observer } from 'mobx-react';
+import Button from './Button';
 
 @inject('count') @observer
 class Counter extends Component {
@@ -14,9 +15,9 @@ class Counter extends Component {
       <div>
         Count: {count.num} <br />
         Double count: {count.getDoubleCount} <br />
-        <button onClick={count.onIncrement}>+1</button>
-        <button onClick={count.onDecrement}>-1</button>
-        <button onClick={count.onAsyncIecrement}>After 1000ms +1</button>
+        <Button onClick={count.onIncrement}>+1</Button>
+        <Button onClick={count.onDecrement}>-1</Button>
+        <Button onClick={count.onAsyncIecrement}>After 1000ms +1</Button>
       </div>
     );
   }

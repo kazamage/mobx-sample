@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
 import DevTools, { setLogEnabled } from 'mobx-react-devtools';
-import './index.css';
+import './index.scss';
 import App from './App';
 import CountStore from './stores/CountStore';
 import * as serviceWorker from './serviceWorker';
@@ -11,7 +11,14 @@ setLogEnabled(true);
 const stores = {
   count: new CountStore(),
 };
-ReactDOM.render(<Provider {...stores}><React.Fragment><App /><DevTools /></React.Fragment></Provider>, document.getElementById('root'));
+ReactDOM.render(
+  <Provider {...stores}>
+    <React.Fragment>
+      <App />
+      <DevTools />
+    </React.Fragment>
+  </Provider>,
+  document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

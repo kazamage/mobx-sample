@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Counter from './components/Conter';
+import Counter from './components/Counter';
+import EntryEMail from './components/EntryEMail';
+import HelloWorld from './components/HelloWorld';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -22,6 +24,12 @@ class App extends Component {
           </a>
           <div style={{ paddingTop: 40 }}>
             <Counter />
+          </div>
+          <div style={{ paddingTop: 40 }}>
+            <EntryEMail onClick={() => console.log('click!')} />
+          </div>
+          <div style={{ paddingTop: 40 }}>
+            <HelloWorld />
           </div>
         </header>
       </div>

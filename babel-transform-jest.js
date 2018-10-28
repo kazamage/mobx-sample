@@ -5,7 +5,7 @@ const customPlugins = [];
 try {
   const decoratorsPluginPath = require.resolve('@babel/plugin-proposal-decorators');
   customPlugins.push([decoratorsPluginPath, { legacy: true }]);
-  console.log('⚡ Rewired added @babel/plugin-proposal-decorators');
+  console.log('Rewired added @babel/plugin-proposal-decorators');
 } catch (e) {
   //do nothing plugin not found
 }
