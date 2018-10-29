@@ -1,5 +1,5 @@
 // Simple test
-import CounterStore from './CountStore';
+import CounterStore from '@/stores/CountStore';
 
 describe('CounterStore', () => {
   let counter;

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
 import DevTools, { setLogEnabled } from 'mobx-react-devtools';
-import './index.scss';
-import App from './App';
-import CountStore from './stores/CountStore';
-import * as serviceWorker from './serviceWorker';
+import '@/index.scss';
+import App from '@/App';
+import CountStore from '@/stores/CountStore';
+import * as serviceWorker from '@/serviceWorker';
 
 setLogEnabled(true);
 const stores = {

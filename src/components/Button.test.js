@@ -1,7 +1,7 @@
 // Shallow rendering
 import React from 'react';
 import { shallow } from 'enzyme';
-import Button from './Button';
+import Button from '@/components/Button';
 
 test('Button', () => {
   const text = 'Add';

@@ -2,8 +2,8 @@
 import React from 'react';
 import { Provider } from 'mobx-react';
 import { render } from 'enzyme';
-import Counter from './Counter';
-import CountStore from '../stores/CountStore';
+import Counter from '@/components/Counter';
+import CountStore from '@/stores/CountStore';
 const stores = {
   count: new CountStore(),
 };

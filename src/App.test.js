@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
-import App from './App';
-import CountStore from './stores/CountStore';
+import App from '@/App';
+import CountStore from '@/stores/CountStore';
 const stores = {
   count: new CountStore(),
 };
